@@ -113,7 +113,15 @@
                         </p>
                         <div class="collapse qr-collapse" id="qr-{{title.titleid}}"></div>
                     </div>
-                    <div class="modal fade" id="downloadModal-{{$index}}" tabindex="-1" role="dialog"
+                    
+                    <div align="center" class="footer">
+                        <a class="btn btn-default btn-simple trigger" data-placement="top" data-toggle="modal"
+                            data-target="#downloadModal-{{$index}}">DOWNLOAD</a>
+                        <a ng-href="{{title.url}}" title="{{title.url}}" class="btn btn-default btn-simple"
+                            role="button" data-toggle="tooltip" data-placement="top" target="_blank">QR CODE</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="downloadModal-{{$index}}" tabindex="-1" role="dialog"
                         aria-labelledby="downloadModalLabel">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -134,15 +142,10 @@
                             </div>
                         </div>
                     </div>
-                    <div align="center" class="footer">
-                        <a class="btn btn-default btn-simple trigger" data-placement="top" data-toggle="modal"
-                            data-target="#downloadModal-{{$index}}">DOWNLOAD</a>
-                        <a ng-href="{{title.url}}" title="{{title.url}}" class="btn btn-default btn-simple"
-                            role="button" data-toggle="tooltip" data-placement="top" target="_blank">QR CODE</a>
-                    </div>
-                </div>
             </div>
+            
         </div>
+        
     </div>
     <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel">
         <div class="modal-dialog" role="document">

@@ -45,6 +45,10 @@
 .card.title {
     margin-bottom: 20px;
     border-radius: 10px;
+    transition: transform .2s;
+}
+.card.title:hover{
+    transform: scale(1.05);
 }
 
 .hb-icon {
