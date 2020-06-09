@@ -1,0 +1,103 @@
+.sidenav {
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    bottom: auto;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+    height: 100%;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.card {
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card.title {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.hb-icon {
+    border: 2px solid #dedede;
+}
+
+.title .content {
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.title h1 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: blue;
+}
+
+.card>.footer {
+    border-top: 1px solid #dedede;
+    padding: 4px;
+    margin: 0;
+}
+
+.card>.footer .btn-simple {
+    color: #6495ED;
+    padding: 12px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn.btn-blue {
+    background-color: #2196F3;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 35px;
+}
+
+.truncate {
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
