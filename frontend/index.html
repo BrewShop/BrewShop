@@ -2,7 +2,7 @@
 <html lang="en" ng-app="brewshop">
 
 <head>
-    <title>BrewShop</title>
+    <title>hShop</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
         style="box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);">
         <a class="navbar-brand" href="#" style="margin: 0; position: absolute; left: 50%;
-        margin-right: -50%; line-height:8px; font-size: 33px;"><img src="./assets/logo.png" alt="BrewShop"></a>
+        margin-right: -50%; line-height:8px; font-size: 33px;"><img src="./assets/logo.png" alt="hShop"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/BrewShop/BrewShop-site" target="_blank"><i
+                    <a class="nav-link" href="https://github.com/hShop/hShop-site" target="_blank"><i
                             class="fab fa-github"></i> Source</a>
                 </li>
                 <li class="nav-item">
@@ -87,8 +87,7 @@
     <div class="container">
         <div class="row" id="titles">
             <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles | filter : searchQuery">
-                <div class="card title btn trigger" type="button" data-toggle="modal"
-                data-target="#appModal-{{$index}}">
+                <div class="card title">
                     <div class="content">
                         <div class="media">
                             <div class="media-left">
@@ -112,14 +111,23 @@
                             <br />
                             <small>Version: {{title.version}}</small>
                         </p>
+                        <div class="collapse qr-collapse" id="qr-{{title.titleid}}"></div>
                     </div>
-                    <div class="modal fade" id="appModal-{{$index}}" tabindex="-1" role="dialog"
-                        aria-labelledby="appModalLabel">
+                    
+                    <div align="center" class="footer">
+                        <a class="btn btn-default btn-simple trigger" data-placement="top" data-toggle="modal"
+                            data-target="#downloadModal-{{$index}}">DOWNLOAD</a>
+                        <a ng-href="{{title.url}}" title="{{title.url}}" class="btn btn-default btn-simple"
+                            role="button" data-toggle="tooltip" data-placement="top" target="_blank">QR CODE</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="downloadModal-{{$index}}" tabindex="-1" role="dialog"
+                        aria-labelledby="downloadModalLabel">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title" ng-if="title.name">
-                                        <center>{{title.name}} menu</center>
+                                        <center>{{title.name}} download menu</center>
                                     </h4>
                                 </div>
                                 <div class="modal-body">
@@ -129,15 +137,15 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-blue" data-dismiss="modal"
-                                        data-toggle="tooltip" style="color: white;">Cancel</button>
+                                        data-toggle="tooltip">Cancel</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="collapse qr-collapse" id="qr-{{title.titleid}}"></div>
                     </div>
-                </div>
             </div>
+            
         </div>
+        
     </div>
     <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModalLabel">
         <div class="modal-dialog" role="document">
@@ -152,7 +160,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-blue" data-dismiss="modal"
-                        data-toggle="tooltip" style="color: white;">Cancel</button>
+                        data-toggle="tooltip">Cancel</button>
                 </div>
             </div>
         </div>
