@@ -42,6 +42,7 @@ body {
     display: inline-block;
     position: relative;
     width: 100%;
+    height: auto;
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.87);
     background: #fff;
@@ -51,13 +52,16 @@ body {
 .card.title {
     margin-bottom: 20px;
     border-radius: 10px;
+<<<<<<< HEAD
+    transition: 0.3s;
+=======
     transition: transform .2s;
+>>>>>>> 8673330c0d0f436087de697c8a322d47954acd2d
 }
 
 .card.title:hover {
-    transform: scale(1.05); /* (105% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 
 .hb-icon {
     border: 2px solid #dedede;
