@@ -53,3 +53,5 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+$('#appModal{{$index}}').modal({backdrop:'static', keyboard:false});

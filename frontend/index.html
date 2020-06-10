@@ -83,12 +83,11 @@
         <a href="#clients"><i class="far fa-play-circle"></i> Games</a>
         <a href="#contact"><i class="fas fa-gamepad"></i> Emulators</a>
     </div>
-
     <div class="container">
         <div class="row" id="titles">
             <div class="col-xs-12 col-sm-6 col-md-3" ng-repeat="title in titles | filter : searchQuery">
-                <div class="card title btn trigger" type="button" data-toggle="modal"
-                data-target="#appModal-{{$index}}">
+                <div class="card title btn trigger" data-backdrop="static" type="button" data-toggle="modal"
+                    data-target="#appModal-{{$index}}">
                     <div class="content">
                         <div class="media">
                             <div class="media-left">
@@ -118,8 +117,8 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4 class="modal-title" ng-if="title.name">
-                                        <center>{{title.name}} menu</center>
+                                    <h4 class="modal-title" ng-if="title.name" style="center">
+                                        <p>{{title.name}} menu</p>
                                     </h4>
                                 </div>
                                 <div class="modal-body">
@@ -151,8 +150,8 @@
                     <p>Test!</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-blue" data-dismiss="modal"
-                        data-toggle="tooltip" style="color: white;">Cancel</button>
+                    <button type="button" class="btn btn-blue" data-dismiss="modal" data-toggle="tooltip"
+                        style="color: white;">Cancel</button>
                 </div>
             </div>
         </div>
