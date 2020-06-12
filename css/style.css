@@ -135,6 +135,10 @@ a.sign-up, a.sign-up:hover {
     color: #fff !important;
 }
 
+a.dropdown-toggle {
+    background-color: #6f4e37;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
