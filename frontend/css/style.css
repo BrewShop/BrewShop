@@ -208,6 +208,10 @@ a.sign-up, a.sign-up:hover {
     font-weight: 700;
 }
 
+.nav-link.paypal:hover {
+    color: #2997d8 !important;
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
