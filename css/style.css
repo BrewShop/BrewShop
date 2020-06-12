@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #e1e1e1;
+    background: #8d7147;
     overflow-x: hidden;
     width: 100%;
 }
@@ -22,7 +22,7 @@ a, a:hover, a:focus {
 
 .navbar {
     padding: 15px 10px;
-    background: white;
+    background: #c19d67;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
@@ -55,7 +55,7 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #42a3ff;
+    background: #6f4e37;
     color: #fff;
     transition: all 0.3s;
 }
@@ -66,12 +66,12 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #42a3ff;
+    background: #6f4e37;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #8d7147;
 }
 
 #sidebar ul p {
@@ -110,7 +110,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #42e0ff;
+    background: #3a2306;
 }
 
 ul.CTAs {
@@ -126,12 +126,12 @@ ul.CTAs a {
 }
 
 a.login {
-    background: #fff;
-    color: #7386D5;
+    background: #8d7147;
+    color: white;
 }
 
 a.sign-up, a.sign-up:hover {
-    background: #42e0ff !important;
+    background: #3a2306 !important;
     color: #fff !important;
 }
 
@@ -160,8 +160,8 @@ a.sign-up, a.sign-up:hover {
     width: 100%;
     height: auto;
     border-radius: 3px;
-    color: rgba(0, 0, 0, 0.87);
-    background: #fff;
+    color: white;
+    background: #c19d67;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     min-width: 100px;
 }
@@ -178,7 +178,7 @@ a.sign-up, a.sign-up:hover {
 }
 
 .hb-icon {
-    border: 2px solid #dedede;
+    border: 2px solid #5e4423;
 }
 
 .title .content {
@@ -212,6 +212,31 @@ a.sign-up, a.sign-up:hover {
     color: #2997d8 !important;
 }
 
+.nav-link.discord:hover {
+    color: #738adb !important;
+}
+
+.nav-link.reddit:hover {
+    color: #FF4301 !important;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.modal-content {
+    background-color: #c19d67;
+}
+
+p.ng-binding {
+    color: white !important;
+    text-align: center;
+}
+
+.btn-blue {
+    background-color: #3a2306;
+    color: white;
+}
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

@@ -94,7 +94,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info" style="background-color: #3a2306; border-color: #c19d67;"> 
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button>
@@ -124,6 +124,12 @@
                             <li class="nav-item">
                             <a class="nav-link paypal" href="https://paypal.me/TaylorGenn" target="_blank"><i class="fab fa-paypal fa-lg"></i> Donate</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link discord" href="https://discord.gg/SrUaDB3" target="_blank"><i class="fab fa-discord fa-lg"></i> Discord</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link reddit" href="https://www.reddit.com/r/BrewShop/" target="_blank"><i class="fab fa-reddit fa-lg"></i> Reddit</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -142,15 +148,15 @@
                                     <div class="media-body">
                                         <div class="media-heading">
                                             <a href="{{title.url}}" target="_blank"><span
-                                                    class="title-name text-primary"
+                                                    class="title-name text-primary" style="color: white !important;"
                                                     title="{{title.name}}">{{title.name}}</span></a>
                                         </div>
                                         <small title="by {{title.author}}">by {{title.author}}</small>
                                     </div>
                                 </div>
                                 <br />
-                                <p class="truncate" title="{{title.description}}">{{title.description}}</p>
-                                <p class="text-muted">
+                                <p class="truncate" style="color: white !important;" title="{{title.description}}">{{title.description}}</p>
+                                <p class="text-muted" style="color: white !important;">
                                     <small>Last Updated: {{title.update_time}}</small>
                                     <br />
                                     <small>Created On: {{title.create_time}}</small>

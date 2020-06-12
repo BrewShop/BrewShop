@@ -6,7 +6,7 @@
         }]);
 
     brewshop.controller('TitleListController', function TitleListController($scope, $http) {
-        $http.get('https://brewshop.github.io/BrewShopCTR/list0.json').then(function (response) {
+        $http.get('https://raw.githubusercontent.com/BrewShop/BrewShop-site/master/list0.json').then(function (response) {
             $scope.titles = response.data.sort(function (a, b) {
                 if (a.name.toUpperCase() < b.name.toUpperCase()) return -1;
                 if (a.name.toUpperCase() > b.name.toUpperCase()) return 1;
