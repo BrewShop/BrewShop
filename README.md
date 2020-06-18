@@ -7,7 +7,7 @@ One stop shop for all your homebrew needs!
 </h1>
 
 <p align="center">
-Made with :heart: and :coffee: by Multimegamander & kerrande
+Made with :heart: and :coffee: by Multimegamander
 </p>
 
 ## Table of Contents
