@@ -1,0 +1,21 @@
+{
+  "name": "BrewShop",
+  "version": "0.3.0",
+  "description": "One stop shop for all your homebrew needs!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "appstore",
+    "homebrew",
+    "brewshop",
+    "nintendo",
+    "playstation",
+    "xbox",
+    "javascript",
+    "open-source"
+  ],
+  "author": "Taylor 'Multi' Genn",
+  "license": "GPL-3.0"
+}

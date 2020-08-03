@@ -1,0 +1,13 @@
+{
+  "name": "BrewShop",
+  "application": {
+    "head": "assets/head.html",
+    "title": "BrewShop"
+  },
+  "source-directories": [
+    "source"
+  ],
+  "test-directories": [
+    "tests"
+  ]
+}
